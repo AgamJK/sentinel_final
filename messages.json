@@ -1,0 +1,23 @@
+[
+  {
+    "id": "msg001",
+    "timestamp": "2025-07-19T10:45:00",
+    "source": "live_chat",
+    "sender": "customer",
+    "text": "I’ve been waiting for hours and still no resolution!"
+  },
+  {
+    "id": "msg002",
+    "timestamp": "2025-07-19T11:00:00",
+    "source": "email",
+    "sender": "customer",
+    "text": "Thanks a lot! You guys helped me very quickly!"
+  },
+  {
+    "id": "msg003",
+    "timestamp": "2025-07-19T11:30:00",
+    "source": "ticket",
+    "sender": "customer",
+    "text": "I'm confused about my billing. Can someone explain?"
+  }
+]
