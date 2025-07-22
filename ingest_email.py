@@ -323,6 +323,10 @@ def continuous_email_monitoring(user_id=None):
                 print("⏰ Waiting 60 seconds before retry...")
                 time.sleep(60)  # Wait longer if there's an error
 
+def run_continuous_email_monitoring():
+    """Entry point for background thread: runs continuous_email_monitoring() for all users."""
+    continuous_email_monitoring()
+
 if __name__ == "__main__":
     # For testing - run continuous monitoring
-    continuous_email_monitoring()
+    run_continuous_email_monitoring()
