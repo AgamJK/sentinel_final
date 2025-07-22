@@ -5,8 +5,6 @@ import os
 from database import get_database_manager
 from gemini_emotion_classifier import classify_emotion_with_gemini
 from dotenv import load_dotenv
-from ingest_email import run_continuous_email_monitoring
-import threading
 
 # Load environment variables
 load_dotenv()
@@ -29,10 +27,6 @@ try:
 except Exception as e:
     print(f"❌ Failed to connect to database: {e}")
     db_manager = None
-
-# Start the ingestion worker in a background thread
-worker_thread = threading.Thread(target=run_continuous_email_monitoring, daemon=True)
-worker_thread.start()
 
 @app.route('/')
 def home():
